@@ -1,6 +1,6 @@
 📌 ** Personal Portfolio Website**
 
-   🚀 A Modern Responsive Personal Portfolio Website built using HTML5, CSS3, and JavaScript.
+     🚀 A Modern Responsive Personal Portfolio Website built using HTML5, CSS3, and JavaScript.
 
 ---
 
@@ -14,11 +14,17 @@
 🎯** Objectives**
 
    ✅ Build a professional online portfolio.
+   
    ✅ Showcase education and technical skills.
+   
    ✅ Display projects and certifications.
+   
    ✅ Create a fully responsive website.
+   
    ✅ Improve user experience using animations.
+   
    ✅ Provide easy communication with recruiters.
+   
    ✅ Demonstrate front-end development skills.
 
 ---
@@ -38,16 +44,27 @@
 ✨** Key Features**
 
    🌟 Responsive Design
+   
    🌙 Dark / Light Theme
+   
    🎨 Modern UI Design
+   
    ⚡ Smooth Scrolling Navigation
+   
    📊 Animated Skill Bars
+   
    📂 Project Showcase
+   
    📜 Certifications Section
+   
    🏆 Achievements Section
+   
    📞 Contact Form
+   
    🔗 Social Media Integration
+   
    📱 Mobile-Friendly Layout
+   
    🚀 Interactive Animations
 
 ---
@@ -164,16 +181,22 @@
  🔄 **Workflow**
 
    1️⃣ User opens the portfolio website.
+   
    2️⃣ Home page loads successfully.
+   
    3️⃣ User navigates through different sections.
+   
    4️⃣ JavaScript provides animations and interactive features.
+   
    5️⃣ User switches between Dark and Light mode.
+   
    6️⃣ User explores projects, certifications, and achievements.
+   
    7️⃣ User contacts the developer using the Contact section.
 
 ---
 
-🚀** Future enhancements include:**
+🚀 **Future enhancements include:**
 
   - 🔐 User Authentication
   - 🗄️ Database Integration
