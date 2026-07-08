@@ -1,10 +1,26 @@
-# OS files
+# macOS
 .DS_Store
+
+# Windows
 Thumbs.db
+Desktop.ini
 
-# Editor settings
+# VS Code
 .vscode/
-.idea/
 
-# Logs
+# Node.js (if added later)
+node_modules/
+
+# Environment variables
+.env
+.env.local
+
+# Log files
 *.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Cache
+.cache/
