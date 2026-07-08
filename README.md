@@ -1,4 +1,4 @@
-📌 ** Personal Portfolio Website**
+📌 **Personal Portfolio Website**
 
      🚀 A Modern Responsive Personal Portfolio Website built using HTML5, CSS3, and JavaScript.
 
@@ -7,8 +7,7 @@
  📖 **Introduction**
  
        The **Personal Portfolio Website** is a modern and responsive web application developed to showcase the professional profile of **Nandyala Rajeswari**.
-       It presents educational qualifications 🎓, technical skills 💻, projects 📂, certifications 📜, achievements  🏆, and contact information 📞 in an attractive and user-friendly interface.
-      The website is built using **HTML5**, **CSS3**, and **JavaScript**, featuring responsive design, smooth  animations, dark/light mode, and interactive components.
+It presents educational qualifications 🎓, technical skills 💻, projects 📂, certifications 📜,achievements  🏆, and contact information 📞 in an attractive and user-friendly interface. The website is built using **HTML5**, **CSS3**, and **JavaScript**, featuring responsive design, smooth  animations, dark/light mode, and interactive components.
 
 ---
 🎯** Objectives**
@@ -92,15 +91,22 @@
 📌 Components
 
 🎨 Presentation Layer
+
     - 📄 HTML5
+    
     - 🎨 CSS3
 
 ⚙️ Business Logic Layer
     - ⚡ JavaScript
+    
     - 🌙 Theme Toggle
+    
     - 📊 Skill Animation
+    
     - 📜 Navigation
+    
     - 📞 Contact Form
+    
     - ✨ Scroll Animation
 
 💾 Data Layer
@@ -112,9 +118,12 @@
 
    This project is a **Static Portfolio Website**.
    Therefore,
+   
       ❌ No Database is used.
+      
       📄 All content is stored directly in HTML.
-       ⚡ JavaScript handles interactivity.
+      
+     ⚡ JavaScript handles interactivity.
 
  🚀 Future Database Integration
      - 🗄️ MySQL
@@ -227,7 +236,8 @@
 **Conclusion**
 
 The **Personal Portfolio Website** successfully demonstrates modern front-end web development using **HTML5**, **CSS3**, and **JavaScript**.
-It provides a responsive 📱, interactive ⚡, and visually appealing 🎨 interface for showcasing professional information.
+
+It provides a responsive, interactive, and visually appealing interface for showcasing professional information.
 This portfolio acts as an online resume, helping recruiters and employers quickly understand the developer's skills and achievements.
 
 
