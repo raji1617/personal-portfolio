@@ -7,310 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<style>
-  :root{
-    --bg:#050508;
-    --bg-alt:#0b0b12;
-    --card:#0f0f18;
-    --card-border:#1e1e2c;
-    --text:#e8e8f0;
-    --text-dim:#8b8ba0;
-    --purple:#7c3aed;
-    --purple-light:#a78bfa;
-    --purple-glow:rgba(124,58,237,0.45);
-    --gradient: linear-gradient(135deg,#8b5cf6,#6d28d9);
-    --radius:14px;
-  }
-
-  [data-theme="light"]{
-    --bg:#f7f6fb;
-    --bg-alt:#ffffff;
-    --card:#ffffff;
-    --card-border:#e7e4f4;
-    --text:#1b1b28;
-    --text-dim:#5c5c74;
-    --purple:#7c3aed;
-    --purple-light:#6d28d9;
-    --purple-glow:rgba(124,58,237,0.25);
-  }
-
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    background:var(--bg);
-    color:var(--text);
-    font-family:'Poppins',sans-serif;
-    overflow-x:hidden;
-    transition:background .3s ease,color .3s ease;
-  }
-
-  a{text-decoration:none;color:inherit;}
-  ul{list-style:none;}
-  section{padding:110px 8vw 90px;position:relative;}
-  .section-tag{
-    display:flex;align-items:center;gap:12px;margin-bottom:50px;
-  }
-  .section-tag h2{
-    font-size:2rem;font-weight:800;display:flex;align-items:center;gap:12px;
-  }
-  .section-tag i{color:var(--purple-light);}
-  .section-tag .line{
-    flex:1;height:2px;
-    background:linear-gradient(90deg,transparent,var(--purple),transparent);
-    max-width:160px;margin-left:auto;
-  }
-
-  /* NAVBAR */
-  header{
-    position:fixed;top:0;left:0;width:100%;z-index:1000;
-    display:flex;align-items:center;justify-content:space-between;
-    padding:18px 6vw;
-    background:rgba(5,5,8,0.75);
-    backdrop-filter:blur(14px);
-    border-bottom:1px solid var(--card-border);
-  }
-  [data-theme="light"] header{background:rgba(255,255,255,0.8);}
-  .logo{font-size:1.5rem;font-weight:800;letter-spacing:.5px;}
-  .logo span{color:var(--purple-light);}
-  nav ul{display:flex;gap:34px;}
-  nav ul li a{
-    font-size:.95rem;font-weight:500;color:var(--text-dim);
-    position:relative;padding-bottom:6px;transition:color .25s;
-  }
-  nav ul li a:hover,nav ul li a.active{color:var(--purple-light);}
-  nav ul li a.active::after{
-    content:'';position:absolute;left:0;bottom:0;width:100%;height:2px;
-    background:var(--purple);border-radius:2px;
-  }
-  .nav-right{display:flex;align-items:center;gap:20px;}
-  #themeToggle{
-    background:var(--card);border:1px solid var(--card-border);
-    color:var(--text);width:38px;height:38px;border-radius:50%;
-    cursor:pointer;display:flex;align-items:center;justify-content:center;
-    transition:.25s;
-  }
-  #themeToggle:hover{border-color:var(--purple);}
-  .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;}
-  .hamburger span{width:26px;height:2px;background:var(--text);border-radius:2px;transition:.3s;}
-
-  /* HERO */
-  .hero{
-    min-height:100vh;display:flex;flex-direction:column;align-items:center;
-    justify-content:center;text-align:center;position:relative;padding-top:100px;
-  }
-  #stars{position:absolute;inset:0;z-index:0;}
-  .hero-content{position:relative;z-index:2;max-width:900px;}
-  .hi{color:var(--purple-light);font-weight:600;font-size:1.2rem;margin-bottom:8px;display:block;}
-  .hero h1{font-size:clamp(2.2rem,6vw,4rem);font-weight:800;line-height:1.15;}
-  .hero h1 .accent{color:var(--purple-light);}
-  .role{
-    font-size:clamp(1.2rem,3vw,1.6rem);font-weight:700;color:var(--purple-light);
-    margin:14px 0 18px;
-  }
-  .hero p.tag{
-    color:var(--text-dim);max-width:640px;margin:0 auto 34px;font-size:1.05rem;line-height:1.7;
-  }
-  .hero-btns{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-bottom:36px;}
-  .btn{
-    padding:14px 30px;border-radius:10px;font-weight:600;font-size:.95rem;
-    display:inline-flex;align-items:center;gap:10px;cursor:pointer;border:none;
-    transition:transform .2s,box-shadow .2s;
-  }
-  .btn-primary{background:var(--gradient);color:#fff;box-shadow:0 8px 24px var(--purple-glow);}
-  .btn-outline{background:transparent;border:1.5px solid var(--card-border);color:var(--text);}
-  .btn:hover{transform:translateY(-3px);}
-  .btn-outline:hover{border-color:var(--purple);}
-
-  .socials{display:flex;gap:16px;justify-content:center;margin-bottom:40px;}
-  .socials a{
-    width:46px;height:46px;border-radius:12px;background:var(--card);
-    border:1px solid var(--card-border);display:flex;align-items:center;justify-content:center;
-    font-size:1.1rem;color:var(--text);transition:.25s;
-  }
-  .socials a:hover{background:var(--gradient);color:#fff;transform:translateY(-4px);border-color:transparent;}
-
-  .scroll-down{color:var(--purple-light);font-weight:500;font-size:.9rem;display:flex;flex-direction:column;align-items:center;gap:6px;}
-  .scroll-down i{animation:bounce 1.8s infinite;}
-  @keyframes bounce{0%,100%{transform:translateY(0);}50%{transform:translateY(8px);}}
-
-  /* ABOUT */
-  .about-text{max-width:950px;color:var(--text-dim);font-size:1.05rem;line-height:1.9;}
-  .about-text p{margin-bottom:20px;}
-  .traits{display:flex;flex-wrap:wrap;gap:16px;margin-top:36px;}
-  .traits span{
-    padding:14px 26px;border-radius:10px;background:var(--card);
-    border:1px solid var(--card-border);font-weight:600;font-size:.95rem;
-    transition:.25s;
-  }
-  .traits span:hover{border-color:var(--purple);color:var(--purple-light);}
-
-  /* EDUCATION */
-  .timeline{position:relative;max-width:900px;padding-left:40px;}
-  .timeline::before{
-    content:'';position:absolute;left:9px;top:10px;bottom:10px;width:2px;background:var(--purple);opacity:.4;
-  }
-  .timeline-item{position:relative;margin-bottom:26px;}
-  .timeline-dot{
-    position:absolute;left:-40px;top:24px;width:18px;height:18px;border-radius:50%;
-    background:var(--purple);box-shadow:0 0 0 4px var(--bg),0 0 12px var(--purple-glow);
-  }
-  .edu-card{
-    background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius);
-    padding:22px 26px;display:flex;gap:18px;align-items:flex-start;transition:.25s;
-  }
-  .edu-card:hover{border-color:var(--purple);transform:translateX(4px);}
-  .edu-icon{
-    width:46px;height:46px;border-radius:10px;background:rgba(124,58,237,0.15);
-    display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:var(--purple-light);flex-shrink:0;
-  }
-  .edu-year{color:var(--purple-light);font-size:.85rem;font-weight:600;margin-bottom:4px;display:block;}
-  .edu-card h3{font-size:1.15rem;margin-bottom:4px;}
-  .edu-card p{color:var(--text-dim);font-size:.95rem;}
-
-  /* SKILLS */
-  .skills-list{max-width:800px;display:flex;flex-direction:column;gap:26px;}
-  .skill-row{display:flex;align-items:center;gap:18px;}
-  .skill-icon{width:34px;height:34px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;}
-  .skill-name{width:110px;font-weight:600;flex-shrink:0;}
-  .bar-track{flex:1;height:8px;background:var(--card-border);border-radius:8px;overflow:hidden;}
-  .bar-fill{height:100%;border-radius:8px;background:var(--gradient);width:0;transition:width 1.4s ease;}
-  .skill-pct{width:46px;text-align:right;font-weight:600;color:var(--text-dim);flex-shrink:0;}
-  .traits.skills-traits{margin-top:44px;}
-
-  /* PROJECTS */
-  .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;}
-  .project-card{
-    background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius);
-    overflow:hidden;display:flex;flex-direction:column;transition:.3s;
-  }
-  .project-card:hover{transform:translateY(-8px);border-color:var(--purple);box-shadow:0 16px 40px rgba(0,0,0,0.35);}
-  .project-thumb{
-    height:170px;display:flex;align-items:center;justify-content:center;font-size:3rem;color:var(--purple-light);
-    background:radial-gradient(circle at 30% 30%,rgba(124,58,237,.18),transparent 70%);
-    border-bottom:1px solid var(--card-border);
-  }
-  .project-body{padding:24px;display:flex;flex-direction:column;gap:14px;flex:1;}
-  .project-body h3{font-size:1.2rem;}
-  .project-body p{color:var(--text-dim);font-size:.92rem;line-height:1.6;flex:1;}
-  .tags{display:flex;flex-wrap:wrap;gap:8px;}
-  .tags span{
-    padding:5px 12px;border-radius:8px;background:rgba(124,58,237,.12);
-    color:var(--purple-light);font-size:.78rem;font-weight:600;border:1px solid rgba(124,58,237,.25);
-  }
-  .project-actions{display:flex;gap:12px;margin-top:6px;}
-  .project-actions .btn{flex:1;justify-content:center;padding:11px 16px;font-size:.88rem;}
-
-  /* CERTIFICATES */
-  .cert-list{display:flex;flex-direction:column;gap:18px;max-width:950px;}
-  .cert-card{
-    background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius);
-    padding:20px 24px;display:flex;align-items:center;gap:18px;transition:.25s;
-  }
-  .cert-card:hover{border-color:var(--purple);transform:translateX(4px);}
-  .cert-badge{
-    width:52px;height:52px;border-radius:10px;flex-shrink:0;display:flex;align-items:center;justify-content:center;
-    font-weight:800;font-size:1.1rem;color:#fff;
-  }
-  .cert-card h3{font-size:1.05rem;color:var(--purple-light);margin-bottom:4px;}
-  .cert-card p{color:var(--text-dim);font-size:.9rem;}
-
-  /* RESUME */
-  .resume-wrap{
-    max-width:950px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius);
-    padding:40px;
-  }
-  .resume-wrap h3{font-size:1.5rem;margin-bottom:6px;}
-  .resume-wrap .role{margin:0 0 20px;text-align:left;font-size:1.05rem;}
-  .resume-contacts{display:flex;flex-wrap:wrap;gap:20px;margin-bottom:26px;color:var(--text-dim);font-size:.92rem;}
-  .resume-contacts a{display:flex;align-items:center;gap:8px;color:var(--text-dim);transition:.2s;}
-  .resume-contacts a:hover{color:var(--purple-light);}
-  .resume-section h4{font-size:1.1rem;margin:22px 0 10px;color:var(--purple-light);}
-  .resume-section p{color:var(--text-dim);line-height:1.8;font-size:.95rem;}
-  .resume-list{display:flex;flex-direction:column;gap:16px;}
-  .resume-item{display:flex;gap:20px;align-items:flex-start;}
-  .resume-date{
-    flex-shrink:0;width:150px;font-size:.85rem;color:var(--purple-light);font-weight:600;line-height:1.5;
-  }
-  .resume-date small{color:var(--text-dim);font-weight:500;}
-  .resume-item > div{color:var(--text-dim);font-size:.95rem;line-height:1.7;}
-  .resume-item strong{color:var(--text);}
-  .resume-item em{color:var(--text-dim);font-style:italic;}
-  .resume-bullets{margin:8px 0 0;padding-left:20px;}
-  .resume-bullets li{margin-bottom:5px;font-size:.9rem;color:var(--text-dim);line-height:1.6;}
-  .resume-cols{display:flex;gap:40px;flex-wrap:wrap;}
-  .resume-cols.three{gap:30px;}
-  .resume-cols .resume-bullets{margin-top:0;}
-  .resume-download{margin-top:28px;}
-
-  /* ACHIEVEMENTS */
-  .ach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
-  .ach-card{
-    background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius);
-    padding:34px 24px;text-align:center;transition:.25s;
-  }
-  .ach-card:hover{border-color:var(--purple);transform:translateY(-6px);}
-  .ach-badge{
-    width:56px;height:56px;border-radius:12px;margin:0 auto 18px;display:flex;align-items:center;justify-content:center;
-    font-weight:800;font-size:1.3rem;color:#fff;
-  }
-  .ach-card h3{font-size:1.1rem;margin-bottom:8px;}
-  .ach-card p{color:var(--text-dim);font-size:.9rem;}
-
-  /* CONTACT */
-  .contact-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;max-width:1200px;}
-  .form-row{display:flex;gap:16px;margin-bottom:16px;flex-wrap:wrap;}
-  .form-row input,.contact-form textarea{
-    flex:1;min-width:200px;background:var(--bg-alt);border:1px solid var(--card-border);
-    border-radius:10px;padding:14px 16px;color:var(--text);font-family:inherit;font-size:.95rem;
-    outline:none;transition:.25s;
-  }
-  .contact-form textarea{width:100%;min-height:140px;resize:vertical;margin-bottom:20px;}
-  .form-row input:focus,.contact-form textarea:focus{border-color:var(--purple);}
-  .contact-form h3{display:flex;align-items:center;gap:10px;margin-bottom:24px;font-size:1.3rem;}
-  .contact-form .btn-primary{width:100%;justify-content:center;padding:15px;}
-  .contact-info-list{display:flex;flex-direction:column;gap:16px;margin-bottom:26px;}
-  .contact-info-item{
-    display:flex;align-items:center;gap:16px;background:var(--card);border:1px solid var(--card-border);
-    padding:16px 18px;border-radius:12px;transition:.25s;
-  }
-  .contact-info-item:hover{border-color:var(--purple);}
-  .contact-info-item .ic{
-    width:40px;height:40px;border-radius:10px;background:rgba(124,58,237,.15);color:var(--purple-light);
-    display:flex;align-items:center;justify-content:center;flex-shrink:0;
-  }
-  .contact-info-item a,.contact-info-item span{font-size:.95rem;}
-  .map-box{
-    height:220px;border-radius:14px;background:var(--card);border:1px solid var(--card-border);
-    display:flex;align-items:center;justify-content:center;color:var(--purple-light);font-size:2rem;
-    position:relative;overflow:hidden;
-  }
-
-  footer{
-    text-align:center;padding:30px;color:var(--text-dim);font-size:.85rem;border-top:1px solid var(--card-border);
-  }
-
-  /* Reveal animation */
-  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
-  .reveal.show{opacity:1;transform:translateY(0);}
-
-  /* Responsive */
-  @media(max-width:900px){
-    .projects-grid,.ach-grid{grid-template-columns:1fr 1fr;}
-    .contact-grid{grid-template-columns:1fr;}
-  }
-  @media(max-width:768px){
-    nav{position:fixed;top:70px;left:0;width:100%;background:var(--bg);
-      flex-direction:column;padding:20px 0;border-bottom:1px solid var(--card-border);
-      transform:translateY(-150%);transition:transform .35s ease;}
-    nav.open{transform:translateY(0);}
-    nav ul{flex-direction:column;align-items:center;gap:22px;}
-    .hamburger{display:flex;}
-    section{padding:90px 6vw 60px;}
-    .projects-grid,.ach-grid{grid-template-columns:1fr;}
-    .skill-name{width:90px;font-size:.9rem;}
-    .resume-wrap{padding:24px;}
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body data-theme="dark">
 
@@ -325,7 +22,6 @@
       <li><a href="#skills" class="nav-link">Skills</a></li>
       <li><a href="#projects" class="nav-link">Projects</a></li>
       <li><a href="#certificates" class="nav-link">Certificates</a></li>
-      <li><a href="#resume" class="nav-link">Resume</a></li>
       <li><a href="#achievements" class="nav-link">Achievements</a></li>
       <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
@@ -348,7 +44,6 @@
     <p class="tag">I build beautiful, responsive and user-friendly websites and web applications.</p>
     <div class="hero-btns">
       <a href="#contact" class="btn btn-primary">Hire Me <i class="fa-solid fa-paper-plane"></i></a>
-      <a href="resume.pdf" download class="btn btn-outline">Download Resume <i class="fa-solid fa-download"></i></a>
     </div>
     <div class="socials">
       <!-- Replace these href values with your real profile links -->
@@ -496,7 +191,7 @@
       <div class="project-body">
         <h3>Education Management System</h3>
         <p>Web application for managing students, courses, results and dashboard reports.</p>
-        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span></div>
         <div class="project-actions">
           <a href="#" target="_blank" class="btn btn-primary">Live Demo</a>
           <a href="https://github.com/raji1617" target="_blank" class="btn btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
@@ -553,135 +248,6 @@
   </div>
 </section>
 
-<!-- RESUME -->
-<section id="resume">
-  <div class="section-tag"><h2><i class="fa-solid fa-file-lines"></i> My Resume</h2><div class="line"></div></div>
-  <div class="resume-wrap reveal">
-    <h3>Rajeswari Nandyala</h3>
-    <div class="role">Frontend Developer</div>
-    <div class="resume-contacts">
-      <a href="mailto:rajeswarinandyala1415@gmail.com"><i class="fa-solid fa-envelope"></i> rajeswarinandyala1415@gmail.com</a>
-      <a href="tel:+919876543210"><i class="fa-solid fa-phone"></i> +91 98765 43210</a>
-      <a href="https://www.linkedin.com/in/rajeswari-nandyala-61728830a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/rajeswari-nandyala</a>
-      <a href="https://github.com/raji1617" target="_blank"><i class="fa-brands fa-github"></i> github.com/raji1617</a>
-    </div>
-    <div class="resume-section">
-      <h4>Profile</h4>
-      <p>Aspiring Front-End Developer with hands-on training in HTML, CSS, JavaScript, and React. Completed internships in web development and software testing, with strong problem-solving skills. Eager to apply technical knowledge in building responsive and user-friendly web applications.</p>
-    </div>
-
-    <div class="resume-section">
-      <h4>Education</h4>
-      <div class="resume-list">
-        <div class="resume-item">
-          <span class="resume-date">2025 – 2027</span>
-          <div><strong>MCA (Master of Computer Applications)</strong><br><em>Narayana Engineering College, Nellore</em></div>
-        </div>
-        <div class="resume-item">
-          <span class="resume-date">2022 – 2025</span>
-          <div><strong>BCA (Data Science)</strong><br><em>Krishna Chaitanya Degree College, Nellore</em></div>
-        </div>
-        <div class="resume-item">
-          <span class="resume-date">2020 – 2022</span>
-          <div><strong>Intermediate (MPC)</strong><br><em>Krishna Chaitanya Junior College, Nellore</em></div>
-        </div>
-        <div class="resume-item">
-          <span class="resume-date">2019 – 2020</span>
-          <div><strong>SSC</strong><br><em>Prasanthi Vidyanikethan E.M High School, Nellore</em></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="resume-section">
-      <h4>Professional Experience</h4>
-      <div class="resume-list">
-        <div class="resume-item">
-          <span class="resume-date">05/2025 – 07/2025<br><small>Virtual</small></span>
-          <div>
-            <strong>VIP Pro Virtual Internship – GradXpert</strong>
-            <ul class="resume-bullets">
-              <li>Completed a 60-day virtual internship.</li>
-              <li>Built a real-world project and gained hands-on experience in startup workflows and industry practices.</li>
-              <li>Strengthened teamwork, problem-solving, and project development skills.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="resume-item">
-          <span class="resume-date">12/2024 – 02/2025<br><small>Nellore</small></span>
-          <div>
-            <strong>Web Technology Intern</strong><br><em>Sun Square Technologies Pvt. Ltd</em>
-            <ul class="resume-bullets">
-              <li>Completed a 3-month internship focused on web technologies.</li>
-              <li>Gained hands-on experience with front-end and/or back-end development tools.</li>
-              <li>Learned about related technologies used in industry environments.</li>
-              <li>Developed practical understanding of web application structure and workflow.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="resume-item">
-          <span class="resume-date">06/2024<br><small>Rajahmundry</small></span>
-          <div>
-            <strong>Assistant Software Developer (DS and AI) Intern</strong><br><em>Amaravathi Software Innovations Pvt. Ltd.</em>
-            <ul class="resume-bullets">
-              <li>Completed a short-term internship in Data Science and Artificial Intelligence.</li>
-              <li>Gained hands-on experience in software development, software testing, and AI-based tools.</li>
-              <li>Worked on practical problem-solving approaches under the guidance of professionals.</li>
-              <li>Organized by APSCHE and Amaravathi Software Innovations in collaboration.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="resume-section">
-      <h4>Skills</h4>
-      <div class="resume-cols">
-        <ul class="resume-bullets"><li>C Language</li><li>Python</li></ul>
-        <ul class="resume-bullets"><li>Frontend (HTML, CSS, JavaScript)</li><li>SQL</li></ul>
-      </div>
-    </div>
-
-    <div class="resume-section">
-      <h4>Languages</h4>
-      <div class="resume-cols">
-        <ul class="resume-bullets"><li>English</li></ul>
-        <ul class="resume-bullets"><li>Telugu</li></ul>
-      </div>
-    </div>
-
-    <div class="resume-section">
-      <h4>Hobbies</h4>
-      <div class="resume-cols three">
-        <ul class="resume-bullets"><li>Listening Music</li></ul>
-        <ul class="resume-bullets"><li>Gardening</li></ul>
-        <ul class="resume-bullets"><li>Browsing Internet</li></ul>
-      </div>
-    </div>
-
-    <div class="resume-section">
-      <h4>Certificates</h4>
-      <ul class="resume-bullets">
-        <li>Responsive Web Development with HTML, CSS3, and JavaScript – Infosys Springboard</li>
-        <li>Python for Beginners – Simplilearn</li>
-        <li>SQL (Basic) Skill Certification – HackerRank</li>
-        <li>Introduction to Data Science – Great Learning</li>
-      </ul>
-    </div>
-
-    <div class="resume-section">
-      <h4>Projects</h4>
-      <p><strong>EduManage – Education Management System</strong><br><em>Technologies: HTML, CSS, JavaScript</em><br>A web application to manage courses, students, and results with dashboard and reports.</p>
-      <p style="margin-top:12px;"><strong>Personal Portfolio Website</strong><br><em>Technologies: HTML, CSS, JavaScript</em><br>Responsive portfolio website to showcase my skills, projects, certifications, and contact details.</p>
-    </div>
-
-    <div class="resume-section">
-      <h4>Declaration</h4>
-      <p>I hereby declare that all the information mentioned in this document is accurate and true to the best of my knowledge and belief and nothing has been concealed therein.</p>
-    </div>
-        
-    <a href="resume.pdf" download class="btn btn-primary resume-download">Download Resume <i class="fa-solid fa-download"></i></a>
-  </div>
-</section>
 
 <!-- ACHIEVEMENTS -->
 <section id="achievements">
@@ -695,12 +261,12 @@
     <div class="ach-card reveal">
       <div class="ach-badge" style="background:#6d28d9;">IN</div>
       <h3>Infosys Springboard</h3>
-      <p>Programming Essentials in Python</p>
+      <p>Adobe Experience Cloud - Suite Certification</p>
     </div>
     <div class="ach-card reveal">
-      <div class="ach-badge" style="background:#0f172a;color:#f97316;"><i class="fa-solid fa-fire"></i></div>
-      <h3>freeCodeCamp</h3>
-      <p>Web Development Certification</p>
+      <div class="ach-badge" style="background:#6d28d9;">SL</div>
+      <h3>Simplilearn|SkillUP</h3>
+      <p> Python for Beginners Certification</p>
     </div>
     <div class="ach-card reveal">
       <div class="ach-badge" style="background:#128a4c;">H</div>
@@ -715,7 +281,7 @@
   <div class="section-tag"><h2><i class="fa-solid fa-paper-plane"></i> Contact Me</h2><div class="line"></div></div>
   <div class="contact-grid">
     <form class="contact-form reveal" id="contactForm">
-      <h3><i class="fa-solid fa-paper-plane"></i>Contact Me</h3>
+      <h3><i class="fa-solid fa-paper-plane"></i> Contact Me</h3>
       <div class="form-row">
         <input type="text" placeholder="Your Name" required>
         <input type="text" placeholder="Your Message" id="hiddenPurposeField">
@@ -757,103 +323,7 @@
 
 <footer>&copy; 2026 Nandyala Rajeswari. All rights reserved.</footer>
 
-<script>
-/* ============ Theme toggle ============ */
-const themeToggle = document.getElementById('themeToggle');
-const body = document.body;
-themeToggle.addEventListener('click', () => {
-  const isDark = body.getAttribute('data-theme') === 'dark';
-  body.setAttribute('data-theme', isDark ? 'light' : 'dark');
-  themeToggle.innerHTML = isDark
-    ? '<i class="fa-solid fa-sun"></i>'
-    : '<i class="fa-solid fa-moon"></i>';
-});
-
-/* ============ Mobile menu ============ */
-const hamburger = document.getElementById('hamburger');
-const mainNav = document.getElementById('mainNav');
-hamburger.addEventListener('click', () => {
-  mainNav.classList.toggle('open');
-});
-document.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', () => {
-    mainNav.classList.remove('open');
-  });
-});
-
-/* ============ Active link on scroll ============ */
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav-link');
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(sec => {
-    const top = sec.offsetTop - 140;
-    if (scrollY >= top) current = sec.getAttribute('id');
-  });
-  navLinks.forEach(link => {
-    link.classList.toggle('active', link.getAttribute('href') === '#' + current);
-  });
-});
-
-/* ============ Reveal on scroll ============ */
-const revealEls = document.querySelectorAll('.reveal');
-const revealObserver = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('show');
-  });
-}, { threshold: 0.15 });
-revealEls.forEach(el => revealObserver.observe(el));
-
-/* ============ Skill bar animation ============ */
-const skillBars = document.querySelectorAll('.bar-fill');
-const skillObserver = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.width = entry.target.dataset.width + '%';
-    }
-  });
-}, { threshold: 0.4 });
-skillBars.forEach(bar => skillObserver.observe(bar));
-
-/* ============ Contact form (demo submit) ============ */
-document.getElementById('contactForm').addEventListener('submit', function(e){
-  e.preventDefault();
-  alert('Thanks for your message! (Connect this form to a backend or a service like Formspree to actually send emails.)');
-  this.reset();
-});
-
-/* ============ Animated starfield in hero ============ */
-const canvas = document.getElementById('stars');
-const ctx = canvas.getContext('2d');
-let stars = [];
-function resizeCanvas(){
-  canvas.width = canvas.parentElement.offsetWidth;
-  canvas.height = canvas.parentElement.offsetHeight;
-  const count = Math.floor((canvas.width * canvas.height) / 6000);
-  stars = Array.from({length: count}, () => ({
-    x: Math.random() * canvas.width,
-    y: Math.random() * canvas.height,
-    r: Math.random() * 1.4 + 0.3,
-    a: Math.random(),
-    speed: Math.random() * 0.015 + 0.003
-  }));
-}
-function drawStars(){
-  ctx.clearRect(0,0,canvas.width,canvas.height);
-  const isLight = body.getAttribute('data-theme') === 'light';
-  stars.forEach(s => {
-    s.a += s.speed;
-    const alpha = Math.abs(Math.sin(s.a));
-    ctx.beginPath();
-    ctx.arc(s.x, s.y, s.r, 0, Math.PI*2);
-    ctx.fillStyle = isLight ? `rgba(124,58,237,${alpha*0.5})` : `rgba(255,255,255,${alpha})`;
-    ctx.fill();
-  });
-  requestAnimationFrame(drawStars);
-}
-window.addEventListener('resize', resizeCanvas);
-resizeCanvas();
-drawStars();
-</script>
+<script src="script.js"></script>
 </body>
 </html>
+ 
