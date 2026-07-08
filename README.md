@@ -1,9 +1,11 @@
 📌 ** Personal Portfolio Website**
+
    🚀 A Modern Responsive Personal Portfolio Website built using HTML5, CSS3, and JavaScript.
 
 ---
 
  📖 **Introduction**
+ 
        The **Personal Portfolio Website** is a modern and responsive web application developed to showcase the professional profile of **Nandyala Rajeswari**.
        It presents educational qualifications 🎓, technical skills 💻, projects 📂, certifications 📜, achievements  🏆, and contact information 📞 in an attractive and user-friendly interface.
       The website is built using **HTML5**, **CSS3**, and **JavaScript**, featuring responsive design, smooth  animations, dark/light mode, and interactive components.
