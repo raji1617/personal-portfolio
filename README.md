@@ -1,6 +1,6 @@
 📌 **Personal Portfolio Website**
 
-🌐 Overview
+🌐 **Overview**
 
 A modern and responsive Personal Portfolio Website built with HTML, CSS, and JavaScript to showcase my profile, skills, projects, certifications, and achievements. It features a clean design, interactive animations, dark/light mode, and a mobile-friendly layout for an engaging user experience.
 
@@ -8,13 +8,10 @@ A modern and responsive Personal Portfolio Website built with HTML, CSS, and Jav
 
 📖 **Introduction**
  
-    The Personal Portfolio Website is a modern and responsive web application developed to showcase the professional profile
-    of Nandyala Rajeswari. It presents educational qualifications, technical skills, projects, certifications,achievements, 
-    and contact information in an attractive and user-friendly interface. The website is built using HTML5, CSS3, and 
-    JavaScript, featuring responsive design, smooth  animations, dark/light mode, and interactive components.
+The Personal Portfolio Website is a modern and responsive web application developed to showcase the professional profile of Nandyala Rajeswari. It presents educational qualifications, technical skills, projects certifications,achievements,and contact information in an attractive and user-friendly interface. The website is built using HTML5, CSS3, and JavaScript, featuring responsive design, smooth  animations, dark/light mode,and interactive components.
 
 ---
-🎯Objectives
+🎯**Objectives**
 
    ✅ Build a professional online portfolio.
    
@@ -31,7 +28,7 @@ A modern and responsive Personal Portfolio Website built with HTML, CSS, and Jav
    ✅ Demonstrate front-end development skills.
 
 ---
-💻 Technologies Used
+💻** Technologies Used**
 
     | 🛠 Technology | 📋 Purpose |
     |--------------|------------|
@@ -44,7 +41,7 @@ A modern and responsive Personal Portfolio Website built with HTML, CSS, and Jav
 
 ---
 
-✨ Key Features
+✨** Key Features**
 
    🌟 Responsive Design
    
@@ -72,7 +69,7 @@ A modern and responsive Personal Portfolio Website built with HTML, CSS, and Jav
 
 ---
 
-🏗️ System Architecture
+🏗️ **System Architecture**
 
 ```
                 👤 User
@@ -118,7 +115,7 @@ A modern and responsive Personal Portfolio Website built with HTML, CSS, and Jav
 
 ---
 
-🗄️ Database Design
+🗄️** Database Design**
 
    This project is a **Static Portfolio Website**.
    Therefore,
@@ -129,14 +126,14 @@ A modern and responsive Personal Portfolio Website built with HTML, CSS, and Jav
       
      ⚡ JavaScript handles interactivity.
 
- 🚀 Future Database Integration
+ 🚀** Future Database Integration**
      - 🗄️ MySQL
      - 🔥 Firebase
      - 🍃 MongoDB
 
   📋 Example Tables
 
-  👤 Users
+  👤 **Users**
 
      | Field | Type |
      |-------|------|
@@ -145,7 +142,7 @@ A modern and responsive Personal Portfolio Website built with HTML, CSS, and Jav
      | Email | VARCHAR |
      | Phone | VARCHAR |
 
-   📂 Projects
+   📂** Projects**
 
      | Field | Type |
      |-------|------|
@@ -221,21 +218,21 @@ A modern and responsive Personal Portfolio Website built with HTML, CSS, and Jav
 ---
 
 
-<img width="940" height="439" alt="Home" src="https://github.com/user-attachments/assets/5c9347fc-600b-47c6-85eb-bada68a015e6" />
+<img width="940" height="439" alt="Home" src="https://github.com/user-attachments/assets/7240d75c-922b-4243-aec1-dc2d069d30dc" />
 
-<img width="922" height="438" alt="About Me" src="https://github.com/user-attachments/assets/c3182f3c-d631-47b7-a9bd-9a6ad405eb9e" />
+<img width="922" height="438" alt="About Me" src="https://github.com/user-attachments/assets/9755312a-bb04-46f9-a767-abef693918a8" />
 
-<img width="930" height="428" alt="My Education" src="https://github.com/user-attachments/assets/0de8b0da-9101-44f6-882c-a24d1613e38b" />
+<img width="930" height="428" alt="My Education" src="https://github.com/user-attachments/assets/1f711a89-e790-43c4-b7c9-cd92bbb3eefd" />
 
-<img width="921" height="433" alt="My Skills" src="https://github.com/user-attachments/assets/db72b589-2815-48ec-9468-8d7f83eba8da" />
+<img width="921" height="433" alt="My Skills" src="https://github.com/user-attachments/assets/de3769c1-1e7e-4f8f-b97f-1eefb6c50450" />
 
-<img width="897" height="427" alt="My Projects" src="https://github.com/user-attachments/assets/8a3e8a67-bad3-43ee-bf21-ff20604a72f2" />
+<img width="897" height="427" alt="My Projects" src="https://github.com/user-attachments/assets/f8ff1a30-382f-4f7b-8029-8bd13906edf6" />
 
-<img width="897" height="416" alt="My Certifications" src="https://github.com/user-attachments/assets/44b4afed-160f-4b4d-805f-0621911dcac6" />
+<img width="897" height="416" alt="My Certifications" src="https://github.com/user-attachments/assets/6a802190-e31b-4f1f-aa79-e5459f85dfe8" />
 
-<img width="906" height="426" alt="My Achievements" src="https://github.com/user-attachments/assets/4e4ce594-7243-4661-9e72-54351c7c54cc" />
+<img width="906" height="426" alt="My Achievements" src="https://github.com/user-attachments/assets/74b44cb6-dfca-4421-b0b7-dd59d5946be6" />
 
-<img width="910" height="425" alt="Contact Me" src="https://github.com/user-attachments/assets/aae65d81-5dfe-4838-9dae-5b36209e911e" />
+<img width="910" height="425" alt="Contact Me" src="https://github.com/user-attachments/assets/0f456733-6def-4a0f-93fa-70cf75c43008" />
 
 ---
 🎯 **Conclusion**
