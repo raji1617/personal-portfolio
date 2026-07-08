@@ -8,10 +8,13 @@ A modern and responsive Personal Portfolio Website built with HTML, CSS, and Jav
 
 📖 **Introduction**
  
-       The Personal Portfolio Website is a modern and responsive web application developed to showcase the professional profile of Nandyala Rajeswari. It presents educational qualifications, technical skills, projects, certifications,achievements, and contact information in an attractive and user-friendly interface. The website is built using HTML5, CSS3, and JavaScript, featuring responsive design, smooth  animations, dark/light mode, and interactive components.
+    The Personal Portfolio Website is a modern and responsive web application developed to showcase the professional profile
+    of Nandyala Rajeswari. It presents educational qualifications, technical skills, projects, certifications,achievements, 
+    and contact information in an attractive and user-friendly interface. The website is built using HTML5, CSS3, and 
+    JavaScript, featuring responsive design, smooth  animations, dark/light mode, and interactive components.
 
 ---
-🎯** Objectives**
+🎯Objectives
 
    ✅ Build a professional online portfolio.
    
@@ -28,7 +31,7 @@ A modern and responsive Personal Portfolio Website built with HTML, CSS, and Jav
    ✅ Demonstrate front-end development skills.
 
 ---
-💻** Technologies Used**
+💻 Technologies Used
 
     | 🛠 Technology | 📋 Purpose |
     |--------------|------------|
@@ -41,7 +44,7 @@ A modern and responsive Personal Portfolio Website built with HTML, CSS, and Jav
 
 ---
 
-✨** Key Features**
+✨ Key Features
 
    🌟 Responsive Design
    
@@ -69,7 +72,7 @@ A modern and responsive Personal Portfolio Website built with HTML, CSS, and Jav
 
 ---
 
-🏗️** System Architecture**
+🏗️ System Architecture
 
 ```
                 👤 User
@@ -186,7 +189,8 @@ A modern and responsive Personal Portfolio Website built with HTML, CSS, and Jav
     │
     ▼
 ✅ End
-```
+
+---
 
  🔄 **Workflow**
 
