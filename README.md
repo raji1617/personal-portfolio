@@ -1,13 +1,14 @@
 📌 **Personal Portfolio Website**
 
-     🚀 A Modern Responsive Personal Portfolio Website built using HTML5, CSS3, and JavaScript.
+🌐 Overview
+
+A modern and responsive Personal Portfolio Website built with HTML, CSS, and JavaScript to showcase my profile, skills, projects, certifications, and achievements. It features a clean design, interactive animations, dark/light mode, and a mobile-friendly layout for an engaging user experience.
 
 ---
 
- 📖 **Introduction**
+📖 **Introduction**
  
-       The **Personal Portfolio Website** is a modern and responsive web application developed to showcase the professional profile of **Nandyala Rajeswari**.
-It presents educational qualifications 🎓, technical skills 💻, projects 📂, certifications 📜,achievements  🏆, and contact information 📞 in an attractive and user-friendly interface. The website is built using **HTML5**, **CSS3**, and **JavaScript**, featuring responsive design, smooth  animations, dark/light mode, and interactive components.
+       The Personal Portfolio Website is a modern and responsive web application developed to showcase the professional profile of Nandyala Rajeswari. It presents educational qualifications, technical skills, projects, certifications,achievements, and contact information in an attractive and user-friendly interface. The website is built using HTML5, CSS3, and JavaScript, featuring responsive design, smooth  animations, dark/light mode, and interactive components.
 
 ---
 🎯** Objectives**
@@ -233,13 +234,11 @@ It presents educational qualifications 🎓, technical skills 💻, projects �
 <img width="910" height="425" alt="Contact Me" src="https://github.com/user-attachments/assets/aae65d81-5dfe-4838-9dae-5b36209e911e" />
 
 ---
-**Conclusion**
+🎯 **Conclusion**
 
-The **Personal Portfolio Website** successfully demonstrates modern front-end web development using **HTML5**, **CSS3**, and **JavaScript**.
+The Personal Portfolio Website successfully demonstrates modern front-end web development using HTML5, CSS3, and JavaScript.
 
 It provides a responsive, interactive, and visually appealing interface for showcasing professional information.
 This portfolio acts as an online resume, helping recruiters and employers quickly understand the developer's skills and achievements.
 
 
-
-⭐ **If you like this project, don't forget to give it a Star!** ⭐
