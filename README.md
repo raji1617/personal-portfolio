@@ -1,11 +1,5 @@
-🌐** Personal Portfolio Website**
-
- 🚀 A Modern Responsive Personal Portfolio Website built using HTML5, CSS3, and JavaScript.
-
----
-
-📌 **Project Title**
-  🌟 Personal Portfolio Website Using HTML, CSS, and JavaScript
+📌 ** Personal Portfolio Website**
+   🚀 A Modern Responsive Personal Portfolio Website built using HTML5, CSS3, and JavaScript.
 
 ---
 
