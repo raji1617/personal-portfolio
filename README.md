@@ -1,4 +1,4 @@
-<img width="897" height="416" alt="My Certifications" src="https://github.com/user-attachments/assets/dc1e0e84-7d6d-4002-95f7-b88e05960e4c" />📌 **Personal Portfolio Website**
+📌 **Personal Portfolio Website**
 
 🌐 **Overview**
 
