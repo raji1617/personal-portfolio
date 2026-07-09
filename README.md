@@ -217,22 +217,28 @@ The Personal Portfolio Website is a modern and responsive web application develo
   - 🌍 GitHub Pages Hosting
 ---
 
-<img width="940" height="439" alt="Home" src="https://github.com/user-attachments/assets/da983f76-72f9-46c8-99b2-0a26c4a4510d" />
+<img width="940" height="439" alt="Home" src="https://github.com/user-attachments/assets/5e2555c0-0b1a-4bca-b93f-6e09dc9b2f6a" />
 
-<img width="922" height="438" alt="About Me" src="https://github.com/user-attachments/assets/cf881b73-6420-4c7e-893c-6744d3d02c04" />
 
-<img width="930" height="428" alt="My Education" src="https://github.com/user-attachments/assets/63ccefc4-51e9-49a6-8b17-51e5e42ca831" />
+<img width="922" height="438" alt="About Me" src="https://github.com/user-attachments/assets/43706f40-ddea-40d7-bb50-b0694f162c96" />
 
-<img width="921" height="433" alt="My Skills" src="https://github.com/user-attachments/assets/bd5f2830-4b7b-44dd-89cd-b1c3db2b48b7" />
 
-<img width="897" height="427" alt="My Projects" src="https://github.com/user-attachments/assets/0268d5ab-54ed-4140-9abe-343599072612" />
+<img width="930" height="428" alt="My Education" src="https://github.com/user-attachments/assets/630b387f-57c1-4f3e-bded-d5f489517188" />
 
-<img width="897" height="416" alt="My Certifications" src="https://github.com/user-attachments/assets/825ae9a3-71bb-4760-aace-04328aa1bf66" />
 
-<img width="906" height="426" alt="My Achievements" src="https://github.com/user-attachments/assets/fc697288-10cc-4b6e-99b8-70ca262158b0" />
+<img width="921" height="433" alt="My Skills" src="https://github.com/user-attachments/assets/640d64aa-b27b-4cba-8b85-a7ee54dfad46" />
 
-<img width="910" height="425" alt="Contact Me" src="https://github.com/user-attachments/assets/1461a4e9-40f2-4236-96b8-8388fb45b785" />
 
+<img width="897" height="427" alt="My Projects" src="https://github.com/user-attachments/assets/c484a85e-971f-41b4-a7b5-4b49cd88e998" />
+
+
+<img width="897" height="416" alt="My Certifications" src="https://github.com/user-attachments/assets/cdf43be9-13fe-4b16-b813-19da6c924025" />
+
+
+<img width="906" height="426" alt="My Achievements" src="https://github.com/user-attachments/assets/420f35e2-3985-4ab7-9f1c-44b9da229602" />
+
+
+<img width="910" height="425" alt="Contact Me" src="https://github.com/user-attachments/assets/3dc82769-9640-4b21-9839-69a8bd1e5f17" />
 
 ---
 🎯 **Conclusion**
